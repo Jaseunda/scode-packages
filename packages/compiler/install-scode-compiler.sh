@@ -2,8 +2,8 @@
 #
 #
 # SCode IDE Compiler
-# Scrip_____
-#
+# Script created by SCode Bot & Other contributors.
+# 
 #
 clear
 figlet SCode 

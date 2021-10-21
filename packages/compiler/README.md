@@ -1,6 +1,6 @@
 # Compiler
 
-Simple overview of use/purpose.
+Used to compile and run programs offline
 
 ## Description
 
@@ -10,14 +10,19 @@ An in-depth paragraph about your project and overview of use.
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+* Before installing compiler you must have SCode Studio or SCode IDE. 
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* Prepare the Termux for installing the Compiler
+```
+apt get update && apt get upgrade -y && pkg install git -y && apt install git -y
+```
 
+* Clone the respiratory or clone it via git clone
+```
+git clone https://github.com/Jaseunda/scode-packages/blob/main/packages/compiler/install-scode-compiler.sh
+```
 ### Executing program
 
 * How to run the program
@@ -37,8 +42,8 @@ command to run if program contains helper info
 
 Contributors names and contact info
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Jaseunda 
+[@jaseunda](https://twitter.com/jaseunda)
 
 ## Version History
 
@@ -53,10 +58,3 @@ ex. [@DomPizzie](https://twitter.com/dompizzie)
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
 ## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)

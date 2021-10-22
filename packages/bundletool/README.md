@@ -6,7 +6,7 @@ Bundletool is a tool to manipulate Android App Bundles.
 
 Prepareration for installing bundletool
 ```
-apt update && apt upgrade -y && pkg update -y && pkg install git ruby curl clang proot make -y
+apt update && apt upgrade -y && pkg update -y && pkg install git ruby curl clang proot make -y && git clone https://github.com/Linuxbrew/brew.git ~/prefix/brew && cd ~/prefix/brew && alias brew="termux-chroot $PWD/bin/brew"
 ```
 # What is bundletool
 

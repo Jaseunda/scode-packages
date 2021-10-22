@@ -4,7 +4,8 @@ Used to compile and run programs offline
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+This script will isntall the following
+python, vim, nano, clang, nodejs, php, golang, mysql and javajdk.
 
 ## Getting Started
 
@@ -21,7 +22,10 @@ apt get update && apt get upgrade -y && pkg install git -y && apt install git -y
 
 * Clone the respiratory or clone it via git clone
 ```
-git clone https://github.com/Jaseunda/scode-packages/blob/main/packages/compiler/install-scode-compiler.sh
+wget https://github.com/Jaseunda/scode-packages/blob/main/packages/compiler/install-scode-compiler.sh
+* Run install
+```
+sh install-scode-compiler.sh
 ```
 ### Executing program
 

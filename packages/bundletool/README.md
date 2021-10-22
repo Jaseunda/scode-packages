@@ -8,6 +8,26 @@ Prepareration for installing bundletool
 ```
 apt update && apt upgrade -y && pkg update -y && pkg install git ruby curl clang proot make -y && git clone https://github.com/Linuxbrew/brew.git ~/prefix/brew && cd ~/prefix/brew && alias brew="termux-chroot $PWD/bin/brew"
 ```
+Install bundle tool
+```
+brew install bundletool
+```
+
+# Usage
+
+Export APKs from AAB
+```
+bundletool build-apks --bundle=/MyApp/my_app.aab --output=/MyApp/my_app.apks
+```
+If you want to deploy the APKs to a device, you need to also include your app’s signing information, as shown in the command below. If you do not specify signing information, bundletool attempts to sign your APKs with a debug key for you.
+```
+bundletool build-apks --bundle=/MyApp/my_app.aab --output=/MyApp/my_app.apks
+--ks=/MyApp/keystore.jks
+--ks-pass=file:/MyApp/keystore.pwd
+--ks-key-alias=MyKeyAlias
+--key-pass=file:/MyApp/key.pwd
+```
+
 # What is bundletool
 
 The **Android App Bundle** is a new format for publishing Android apps in app

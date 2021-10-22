@@ -2,6 +2,14 @@
 
 Bundletool is a tool to manipulate Android App Bundles.
 
+**Install bundle tool**
+
+Prepareration for installing bundletool
+```
+apt update && apt upgrade -y && pkg update -y && pkg install git ruby curl clang proot make -y
+```
+# What is bundletool
+
 The **Android App Bundle** is a new format for publishing Android apps in app
 distribution stores such as Google Play.
 

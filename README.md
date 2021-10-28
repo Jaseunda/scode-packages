@@ -5,7 +5,7 @@
 
 <img src="https://github.com/termux/termux-app/blob/master/art/ic_launcher2.png" alt="Powered by Termux" width="128px"></img>
 
-This project contains scripts and patches to build packages for the [Termux](https://github.com/termux/termux-app)Android application to run SCode Compiler.
+This project contains scripts and patches to build packages for the [Termux](https://github.com/termux/termux-app) Android application to run SCode Compiler.
 
 ## Contributing
 

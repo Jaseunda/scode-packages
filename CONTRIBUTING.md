@@ -203,13 +203,6 @@ Use of forks is allowed only under a good reason.
 
 More about `build.sh` variables you can read on [developer's wiki](https://github.com/jaseunda/scode-packages/wiki/Creating-new-package#table-of-available-package-control-fields).
 
-## Updating packages
-
-[![asciicast](https://asciinema.org/a/gVwMqf1bGbqrXmuILvxozy3IG.svg)](https://asciinema.org/a/gVwMqf1bGbqrXmuILvxozy3IG?autoplay=1&speed=2.0)
-
-You can check which packages are out-of-date by visiting Termux page on
-[Repology](https://repology.org/projects/?inrepo=termux&outdated=1).
-
 ### General package update procedure
 
 Usually to update packages you need to just modify few variables and commit
@@ -266,7 +259,7 @@ SCODE_PKG_VERSION=1.0
 SCODE_PKG_REVISION=4
 ```
 
-If package version has been updated, `TERMUX_PKG_REVISION` should be removed.
+If package version has been updated, `SCODE_PKG_REVISION` should be removed.
 
 ## Downgrading the package or changing versioning scheme
 

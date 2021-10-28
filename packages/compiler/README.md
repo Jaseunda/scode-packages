@@ -15,7 +15,7 @@ python, vim, nano, clang, nodejs, php, golang, mysql and javajdk.
 
 ### Installing
 
-* Prepare the Termux for installing the Compiler
+* Prepare the SCODE for installing the Compiler
 ```
 apt get update && apt get upgrade -y && pkg install git -y && apt install git -y
 ```

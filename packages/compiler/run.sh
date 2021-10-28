@@ -5,6 +5,98 @@
 # Script created by SCode Bot & Other contributors.
 # 
 # SCODE_PKG_HOMEPAGE=https://github.com/Jaseunda/scode-packages/blob/main/packages
+# SCODE_PKG_DESCRIPTION="Compiler"
+# SCODE_PKG_LICENSE="Apache-2.0"
+# SCODE_PKG_MAINTAINER="@scode"
+# _TAG_VERSION=0.0.1
+# _TAG_REVISION=33
+# SCODE_PKG_VERSION=${_TAG_VERSION}.${_TAG_REVISION}
+# SCODE_PKG_REVISION=15
+# SCODE_PKG_SKIP_SRC_EXTRACT=true
+# SCODE_PKG_BUILD_IN_SRC=true
+# SCODE_PKG_DEPENDS=""   
+clear
+termux-setup-storage
+clear && cd FILEDIR
+echo "CHECKING SCODE COMPILER: RUNNING"
+cd $HOME
+
+FILE=.scode.runfile
+if [[ -f "$FILE" ]]; then
+   
+clear && cd FILEDIR
+echo "Weclome to SCode Compiler'\033[1;33m"
+echo "This is Automative compiler for you      \e[100mv0.1_alpha"
+echo " "
+echo "visit: https://github.com/Jaseunda/scode-packages/tree/main/packages/compiler for more info."
+echo " "
+echo "You current directory: FILEDIR"
+echo "Supported languages"
+echo "1.Python"
+echo "2.C/C++"
+echo "3.Localhost"
+echo "4.Apecahce"
+echo "0.I know what im doing"
+read -p "What language did you want to use? " language
+
+
+
+
+ 
+if [ "$language" == "1" ];  then 
+    
+    echo "SELECTED:PYTHON"
+    alias run="python"
+    echo "To run python type run + [PATH_OF_FILE] and hit enter."
+    echo "Example python src/example.py. To show file directory type ls"
+    echo "You current directory: FILEDIR"
+
+else
+   
+if [ "$language" == "2" ]; then
+    echo "SELECTED:C/C++"
+    alias compile="clang"
+    echo "To compile C/C++ files type to compile + [PATH_OF_FILE] your file and hit enter."
+    echo "To run your execute your compiled C/C++ type ./a.out and hit enter"
+    echo "You current directory: FILEDIR"
+else
+    if [ "$language" == "3" ]; then
+    echo "SELECTED:Localhost"
+    echo "To run localhost type php -S localhost:8080 -t [PATH_DIRECTORY] and hit enter."
+ echo "You current directory: FILEDIR"
+else
+    if [ "$language" == "4" ]; then
+    echo "SELECTED:Apecache"
+    echo "To run PHP Apecache type php apachectl start and hit enter."
+    echo "NOTE: Ensure you config you PHP Apecahce before running it. "
+else
+    if [ "$language" == "0" ]; then
+    echo " "
+    echo "Okay, Happy Coding :D"
+    echo "You current directory: FILEDIR, :)"
+ 
+else
+    echo "Invalid input"
+fi
+fi
+fi
+fi
+fi
+
+else 
+
+ echo "Scode Compiler is not installed yet"
+ read -p "Do you want to install it? (y/n) " ans
+
+
+
+
+ 
+if [ "$ans" == "y" ];  then 
+    
+echo "Installing Scode Compiler v0.0.1"
+# SCode IDE Compiler
+# SCODE_PKG_HOMEPAGE=https://github.com/Jaseunda/scode-packages/blob/main/packages
 # SCODE_PKG_DESCRIPTION="Installer"
 # SCODE_PKG_LICENSE="Apache-2.0"
 # SCODE_PKG_MAINTAINER="@scode"
@@ -106,5 +198,15 @@ else
 	echo
 	ee "\e[32mSCode Compiler was successfully installed!\e[39m"
 	echo "Enjoy :D"
-	echo "For more information goto: https://jaseunda.gitbook.io/scode-ide/"
+    touch .scode.runfile
+	echo "For more information go to: https://jaseunda.gitbook.io/scode-ide/"
+    echo "Restart termianl to run Scode Compiler"
+fi
+
+
+else
+   
+   echo "Installation cancelled, If you want to use Scode Compiler you need to install it first."
+
+fi
 fi

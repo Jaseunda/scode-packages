@@ -25,6 +25,7 @@ apt get update && apt get upgrade -y && pkg install git -y && apt install git -y
 wget https://github.com/Jaseunda/scode-packages/blob/main/packages/compiler/install-scode-compiler.sh
 ```
 * Run install
+```
 sh install-scode-compiler.sh
 ```
 ### Executing program
@@ -32,14 +33,7 @@ sh install-scode-compiler.sh
 * How to run the program
 * Step-by-step bullets
 ```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
+sh run.sh
 ```
 
 ## Authors

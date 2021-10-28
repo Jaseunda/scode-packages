@@ -5,7 +5,7 @@ Used to compile and run programs offline
 ## Description
 
 This script will isntall the following
-python, vim, nano, clang, nodejs, php, golang, mysql and javajdk.
+python, vim, nano, clang, nodejs, php, golang, mysql, apecahce and javajdk.
 
 ## Getting Started
 
@@ -23,8 +23,8 @@ apt get update && apt get upgrade -y && pkg install git -y && apt install git -y
 * Clone the respiratory or clone it via git clone
 ```
 wget https://github.com/Jaseunda/scode-packages/blob/main/packages/compiler/install-scode-compiler.sh
-* Run install
 ```
+* Run install
 sh install-scode-compiler.sh
 ```
 ### Executing program
@@ -59,6 +59,6 @@ Jaseunda
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the [Jaseunda] License - see the LICENSE.md file for details
 
-## Acknowledgments
+ 

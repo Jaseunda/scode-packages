@@ -107,5 +107,5 @@ else
 	ee "\e[32mSCode Compiler was successfully installed!\e[39m"
 	 touch .scode.runfile
 	echo "For more information go to: https://jaseunda.gitbook.io/scode-ide/"
-    echo "Restart termianl to run Scode Compiler
+    echo "Restart termianl to run Scode Compiler"
 fi

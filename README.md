@@ -1,4 +1,4 @@
-# Scode packages
+# SCode packages
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/jaseunda/scode-packages)
 

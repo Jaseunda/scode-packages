@@ -62,7 +62,7 @@ install_flutter() {
 }
 
 post_install_msg() {
-    msg ""Don't worry if you run into any issues, we've got you covered! Just drop by our friendly Discord community and we'll be happy to help you out."
+    msg "Don't worry if you run into any issues, we've got you covered! Just drop by our friendly Discord community and we'll be happy to help you out."
     msg 
     msg "Would you like to join our Discord community? ? [y/n]"
 

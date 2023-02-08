@@ -20,22 +20,20 @@ msg() {
 error_msg() {
     echo -e "[!] $@" >&2
 }
-
-check_deps() {
-    pkgs=("proot-distro" "curl" "git" "unzip" "sed")
-
-    for pkg in pkgs; do
-        if [ -z $(command -v ${pkg}) ]; then
-            msg "Installing ${pkg}"
-            apt install ${pkg} > /dev/null 2>&1
-        fi
-    done
-
-    if [ -z $(command -v termux-open-url) ]; then
-        msg "Installing termux-open-url"
-        apt install termux-tools > /dev/null 2>&1
-    fi
-}
+ pkg install proot-distro && -y &&  pkg install curl && -y && pkg install git && -y && pkg install unzip && -y && pkg install sed && -y
+# check_deps() {
+#  pkgs=("proot-distro" "curl" "git" "unzip" "sed")
+#     for pkg in pkgs; do
+#         if [ -z $(command -v ${pkg}) ]; then
+#             msg "Installing ${pkg}"
+#             apt install ${pkg} > /dev/null 2>&1
+#         fi
+#     done
+#    if [ -z $(command -v termux-open-url) ]; then
+#         msg "Installing termux-open-url"
+#         apt install termux-tools > /dev/null 2>&1
+#     fi
+# }
 
 is_android_sdk_installed() {
     if [ ! -d ${PREFIX}/share/android-sdk ]; then

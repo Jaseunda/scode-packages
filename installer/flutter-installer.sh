@@ -11,6 +11,7 @@
 FLUTTER_VERSION="2.16.0"
 
 DISCORD_LINK="https://scodetstudio.com/community"
+ANDROID_SDK_INSTALLATION_GUIDE="https://scodetstudio.com/android-sdk-installation-guide"
 
 msg() {
     echo -e "[*] $@"

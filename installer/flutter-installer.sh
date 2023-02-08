@@ -34,15 +34,15 @@ error_msg() {
 #         apt install termux-tools > /dev/null 2>&1
 #     fi
 # }
-
-is_android_sdk_installed() {
-    if [ ! -d ${PREFIX}/share/android-sdk ]; then
-        error_msg "Android SDK not found. You will now be redirected to the installation guide. Please follow the steps and run the script again."
-        sleep 4
-        termux-open-url ${ANDROID_SDK_INSTALLATION_GUIDE}
-        exit 1
-    fi
-}
+# skip android sdk
+# is_android_sdk_installed() {
+#     if [ ! -d ${PREFIX}/share/android-sdk ]; then
+#         error_msg "Android SDK not found. You will now be redirected to the installation guide. Please follow the steps and run the script again."
+#         sleep 4
+#         termux-open-url ${ANDROID_SDK_INSTALLATION_GUIDE}
+#         exit 1
+#     fi
+# }
 
 install_debian() {
     proot-distro install debian --override-alias flutter

@@ -2,10 +2,7 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/jaseunda/scode-packages)
 
-
 <img src="https://github.com/termux/termux-app/blob/master/art/ic_launcher2.png" alt="Powered by Termux" width="128px"></img>
-
-# SCode packages
 
 SCode packages are a collection of modules and libraries that you can use to enhance your coding experience on SCode IDE. They provide additional functionality and features for various programming languages and frameworks. You can install, update, and uninstall packages using the built-in package manager on SCode IDE.
 

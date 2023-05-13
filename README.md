@@ -10,7 +10,7 @@ SCode packages are a collection of modules and libraries that you can use to enh
 
 ## Features
 
-- Browse and search for over 1000 packages from GitHub
+- Browse and search for over 1000 packages from GitHub.
 - Install and update packages with one tap
 - Uninstall packages that you don't need
 - View package details,
